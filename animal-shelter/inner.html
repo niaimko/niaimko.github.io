@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animal Shelter - Our pets</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body class="inner-page">
+  <div class="main-container">
+    <!-- шапка страницы -->
+    <header class="main-header">
+      <div class="container">
+        <!-- главная навигация по всему сайту -->
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <h1>
+              <span>Cozy House</span>
+              <span>Shelter for pets in Boston</span>
+            </h1>
+          </a>
+          <!-- основное меню - неупорядоченный список, где каждый элемент содержит ссылку на страницу -->
+          <ul class="site-navigation">
+            <li><a href="index.html#about-the-shelter">About the shelter</a></li>
+            <li class="site-navigation-current"><a>Our pets</a></li>
+            <li><a href="index.html#to-help-the-shelter">To help the shelter</a></li>
+            <li><a href="index.html#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- разметим перечень доступных друзей -->
+      <section class="catalog">
+        <h2>Our friends who<br> are looking for a house</h2>
+        <div class="container">
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <h3 class="catalog-item-title">Katrine</h3>
+              <p class="catalog-item-image">
+                <img src="img/katrine.png" width="270" height="270" alt="Cat Katrine">
+              </p>
+              <button class="button katrine-link" type="button">Learn More</button>
+            </li>
+            <li class="catalog-item">
+              <h3 class="catalog-item-title">Jennifer</h3>
+              <p class="catalog-item-image">
+                <img src="img/jennifer.png" width="270" height="270" alt="Dog Jennifer">
+              </p>
+              <button class="button jennifer-link" type="button">Learn More</button>
+            </li>
+            <li class="catalog-item">
+              <h3 class="catalog-item-title">Woody</h3>
+              <p class="catalog-item-image">
+                <img src="img/woody.png" width="270" height="270" alt="Dog Woody">
+              </p>
+              <button class="button woody-link" type="button">Learn More</button>
+            </li>
+            <li class="catalog-item">
+              <h3 class="catalog-item-title">Sophia</h3>
+              <p class="catalog-item-image">
+                <img src="img/sophia.png" width="270" height="270" alt="Dog Sophia">
+              </p>
+              <button class="button sophia-link" type="button">Learn More</button>
+            </li>
+            <li class="catalog-item">
+              <h3 class="catalog-item-title">Timmy</h3>
+              <p class="catalog-item-image">
+                <img src="img/timmy.png" width="270" height="270" alt="Cat Timmy">
+              </p>
+              <button class="button timmy-link" type="button">Learn More</button>
+            </li>
+            <li class="catalog-item">
+              <h3 class="catalog-item-title">Charly</h3>
+              <p class="catalog-item-image">
+                <img src="img/charly.png" width="270" height="270" alt="Dog Charly">
+              </p>
+              <button class="button charly-link" type="button">Learn More</button>
+            </li>
+            <li class="catalog-item">
+              <h3 class="catalog-item-title">Scarlett</h3>
+              <p class="catalog-item-image">
+                <img src="img/scarlett.png" width="270" height="270" alt="Dog Scarlett">
+              </p>
+              <button class="button scarlett-link" type="button">Learn More</button>
+            </li>
+            <li class="catalog-item">
+              <h3 class="catalog-item-title">Freddie</h3>
+              <p class="catalog-item-image">
+                <img src="img/freddie.png" width="270" height="270" alt="Cat Freddie">
+              </p>
+              <button class="button freddie-link" type="button">Learn More</button>
+            </li>
+          </ul>
+        </div>
+        <!-- нумерация страниц - пагинация -->
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item">...</li>
+          <li class="pagination-item"><a href="#">10</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-contacts">
+          <h2>For questions and suggestions</h2>
+          <p class="email">email@shelter.com</p>
+          <p class="phone">+13 674 567 75 54</p>
+        </div>
+        <div class="footer-address">
+          <h2>We are waiting for your visit</h2>
+          <p>Boston, Central Street, 1st (Entrance from the store)</p>
+          <p>London, South Park, 18st</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- модальные окна -->
+  <section class="modal modal-pets modal-pets-jennifer">
+    <div class="modal-pets-wrapper">
+      <p class="modal-pets-image">
+        <img src="img/jennifer_modal.png" width="470" height="470" alt="Dog Jennifer">
+      </p>
+      <div class="modal-pets-description">
+        <h2>Jennifer</h2>
+        <h3>Pooch + Labrador</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+        <ul class="features-list">
+          <li><span>Age:</span> 2 months</li>
+          <li><span>Inoculations:</span> none</li>
+          <li><span>Diseases:</span> none</li>
+          <li><span>Parasites:</span> none</li>
+        </ul>
+      </div>
+    </div>
+    <button class="modal-close" type="button">Close</button>
+  </section>
+
+  <section class="modal modal-pets modal-pets-charly">
+    <div class="modal-pets-wrapper">
+      <p class="modal-pets-image">
+        <img src="img/charly_modal.png" width="470" height="470" alt="Dog Charly">
+      </p>
+      <div class="modal-pets-description">
+        <h2>Charly</h2>
+        <h3>Pooch</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+        <ul class="features-list">
+          <li><span>Age:</span> 4 months</li>
+          <li><span>Inoculations:</span> none</li>
+          <li><span>Diseases:</span> none</li>
+          <li><span>Parasites:</span> none</li>
+        </ul>
+      </div>
+    </div>
+    <button class="modal-close" type="button">Close</button>
+  </section>
+  <script  src="js/script.min.js"></script>
+</body>
+</html>
